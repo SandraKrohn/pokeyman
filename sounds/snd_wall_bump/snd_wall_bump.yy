@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_wall_bump",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":64,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.018776,
+  "name":"snd_wall_bump",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":32000,
+  "soundFile":"snd_wall_bump.mp3",
+  "type":0,
+  "volume":1.0,
+}
