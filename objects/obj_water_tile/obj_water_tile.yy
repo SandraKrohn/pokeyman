@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_water_tile",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_water_tile",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_water",
+    "path":"sprites/spr_water/spr_water.yy",
   },
   "spriteMaskId":null,
   "visible":false,

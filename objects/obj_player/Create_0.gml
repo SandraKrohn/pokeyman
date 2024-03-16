@@ -40,3 +40,33 @@ function set_animation(_animation) {
 	animation = _animation;
 	image_index = 0;
 }
+
+function get_tile_at(_x, _y) {	
+	var _tile = instance_place(_x, _y, par_tile);
+	return (_tile == noone) ? TILE.EMPTY :  _tile.tile_type;
+}
+
+function get_tile_facing() {
+	var _desired_x = x;
+	var _desired_y = y;
+	
+	switch(dir) {
+		case DIR.LEFT:
+			_desired_x -= grid_size;
+			break;
+		case DIR.RIGHT:
+			_desired_x += grid_size;
+			break;
+		case DIR.UP:
+			_desired_y -= grid_size;
+			break;
+		case DIR.DOWN:
+			_desired_y += grid_size;
+			break;
+	}
+	
+	return get_tile_at(_desired_x, _desired_y);
+}
+
+// git notes / commit message:
+// added camera, tile check for interactions

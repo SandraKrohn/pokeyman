@@ -12,11 +12,11 @@ if (input_x != 0 || input_y != 0) {
 		else if (input_y == 1)
 			dir = DIR.DOWN;
 		
-		// set target and begin moving
+		// check tile in front of player for walls
 		var _desired_x = x + (grid_size * input_x);
 		var _desired_y = y + (grid_size * input_y);
 		
-		if (!place_meeting(_desired_x, _desired_y, obj_wall)) {
+		if (get_tile_at(_desired_x, _desired_y) == TILE.EMPTY) {
 			target_x = _desired_x;
 			target_y = _desired_y;
 			moving = true;
@@ -24,6 +24,12 @@ if (input_x != 0 || input_y != 0) {
 		else {
 			audio_play_sound(snd_wall_bump, 1, false);
 		}
+	}
+}
+
+else if (key_action) {
+	if (get_tile_facing() == TILE.WATER) {
+		show_message("Gone fishing.");
 	}
 }
 

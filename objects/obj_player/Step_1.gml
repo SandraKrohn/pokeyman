@@ -5,3 +5,5 @@ input_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 if (input_x != 0)
 	input_y = 0;
+
+key_action = keyboard_check(ord("E"));

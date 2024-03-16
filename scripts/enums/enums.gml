@@ -4,3 +4,9 @@ enum DIR {
 	UP,
 	DOWN
 }
+
+enum TILE {
+	WALL,
+	WATER,
+	EMPTY
+}
