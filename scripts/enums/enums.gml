@@ -8,5 +8,11 @@ enum DIR {
 enum TILE {
 	WALL,
 	WATER,
-	EMPTY
+	EMPTY,
+	INTERACT
+}
+
+enum ITEM {
+	NOTHING,
+	POTION
 }

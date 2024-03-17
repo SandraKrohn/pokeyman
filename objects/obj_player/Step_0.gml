@@ -15,8 +15,9 @@ if (input_x != 0 || input_y != 0) {
 		// check tile in front of player for walls
 		var _desired_x = x + (grid_size * input_x);
 		var _desired_y = y + (grid_size * input_y);
+		var _tile = get_tile_at(_desired_x, _desired_y);
 		
-		if (get_tile_at(_desired_x, _desired_y) == TILE.EMPTY) {
+		if (_tile == noone || _tile.tile_type == TILE.EMPTY) {
 			target_x = _desired_x;
 			target_y = _desired_y;
 			moving = true;
@@ -28,8 +29,14 @@ if (input_x != 0 || input_y != 0) {
 }
 
 else if (key_action) {
-	if (get_tile_facing() == TILE.WATER) {
-		show_message("Gone fishing.");
+	var _tile = get_tile_facing();
+	if (_tile != noone) {
+		if (_tile.tile_type == TILE.WATER) {
+			show_message("Gone fishing.");
+		}
+		else if (_tile.tile_type == TILE.INTERACT) {
+			_tile.interact();
+		}
 	}
 }
 

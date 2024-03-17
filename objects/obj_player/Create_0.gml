@@ -41,9 +41,9 @@ function set_animation(_animation) {
 	image_index = 0;
 }
 
-function get_tile_at(_x, _y) {	
+function get_tile_at(_x, _y) {
 	var _tile = instance_place(_x, _y, par_tile);
-	return (_tile == noone) ? TILE.EMPTY :  _tile.tile_type;
+	return _tile;
 }
 
 function get_tile_facing() {
@@ -67,6 +67,3 @@ function get_tile_facing() {
 	
 	return get_tile_at(_desired_x, _desired_y);
 }
-
-// git notes / commit message:
-// added camera, tile check for interactions
