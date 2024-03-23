@@ -1,0 +1,1 @@
+tile_type = TILE.GRASS;

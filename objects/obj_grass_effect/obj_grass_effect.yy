@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_water_tile",
+  "%Name":"obj_grass_effect",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_water_tile",
+  "name":"obj_grass_effect",
   "overriddenProperties":[],
   "parent":{
-    "name":"tiles",
-    "path":"folders/Objects/tiles.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"par_tile",
-    "path":"objects/par_tile/par_tile.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_water",
-    "path":"sprites/spr_water/spr_water.yy",
+    "name":"spr_grass_effect",
+    "path":"sprites/spr_grass_effect/spr_grass_effect.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

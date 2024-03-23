@@ -8,8 +8,8 @@
   "name":"par_tile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"tiles",
+    "path":"folders/Objects/tiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

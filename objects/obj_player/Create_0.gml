@@ -6,6 +6,7 @@ target_y = y;
 move_speed = 1;
 input_x = 0;
 input_y = 0;
+encounter_steps = irandom_range(8, 16);
 
 animations = {
 	idle: {

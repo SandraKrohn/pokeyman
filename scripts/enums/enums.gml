@@ -9,7 +9,8 @@ enum TILE {
 	WALL,
 	WATER,
 	EMPTY,
-	INTERACT
+	INTERACT,
+	GRASS
 }
 
 enum ITEM {

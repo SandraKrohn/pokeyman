@@ -8,8 +8,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"tiles",
+    "path":"folders/Objects/tiles.yy",
   },
   "parentObjectId":{
     "name":"par_tile",

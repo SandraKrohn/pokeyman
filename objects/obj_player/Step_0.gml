@@ -17,7 +17,7 @@ if (input_x != 0 || input_y != 0) {
 		var _desired_y = y + (grid_size * input_y);
 		var _tile = get_tile_at(_desired_x, _desired_y);
 		
-		if (_tile == noone || _tile.tile_type == TILE.EMPTY) {
+		if (_tile == noone || _tile.tile_type == TILE.EMPTY || _tile.tile_type == TILE.GRASS) {
 			target_x = _desired_x;
 			target_y = _desired_y;
 			moving = true;
@@ -47,8 +47,19 @@ if (moving) {
 	// move
 	x = approach(x, target_x, move_speed);
 	y = approach(y, target_y, move_speed);
-	if (x == target_x && y = target_y)
+	if (x == target_x && y = target_y) {
+		// grass logic
+		if (place_meeting(x, y, obj_grass)) {
+			instance_create_depth(x, y, depth - 1, obj_grass_effect);
+		if (encounter_steps > 0)
+			encounter_steps--;
+		else {
+			encounter_steps = irandom_range(8, 16);
+			show_message("Pokemon encounter");
+			}
+		}
 		moving = false;
+	}
 }
 else
 	set_animation(animations.idle);
