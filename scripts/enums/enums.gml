@@ -17,3 +17,15 @@ enum ITEM {
 	NOTHING,
 	POTION
 }
+
+enum TYPE {
+	GRASS,
+	FIRE,
+	WATER
+}
+
+enum DAMAGE_TYPE {
+	PHYSICAL,
+	SPECIAL,
+	STATUS
+}

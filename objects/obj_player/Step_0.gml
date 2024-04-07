@@ -55,7 +55,7 @@ if (moving) {
 			encounter_steps--;
 		else {
 			encounter_steps = irandom_range(8, 16);
-			show_message("Pokemon encounter");
+			show_message(get_encounter());
 			}
 		}
 		moving = false;

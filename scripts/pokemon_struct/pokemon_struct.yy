@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"pokemon_struct",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pokemon_struct",
+  "parent":{
+    "name":"pokemon",
+    "path":"folders/Scripts/pokemon.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"attack_ember",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"attack_ember",
+  "parent":{
+    "name":"attack_dex",
+    "path":"folders/Scripts/attacks/attack_dex.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

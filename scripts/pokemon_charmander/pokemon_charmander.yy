@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"pokemon_charmander",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pokemon_charmander",
+  "parent":{
+    "name":"pokedex",
+    "path":"folders/Scripts/pokemon/pokedex.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
